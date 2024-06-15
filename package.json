@@ -1,0 +1,31 @@
+{
+  "name": "stylesheet-from-rn",
+  "version": "1.0.0",
+  "description": "Replicates the StyleSheet functionality from React Native for React web applications.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carlosxfelipe/stylesheet-from-rn.git"
+  },
+  "keywords": [
+    "react",
+    "stylesheet",
+    "react-native",
+    "web",
+    "styles"
+  ],
+  "author": "Carlos Felipe Araujo <carlosxfelipe@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "typescript": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0"
+  }
+}
