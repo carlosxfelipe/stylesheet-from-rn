@@ -1,4 +1,3 @@
-
 # stylesheet-from-rn
 
 This package aims to replicate the existing StyleSheet functionality from React Native for React web applications. It provides a simple utility to create and manage stylesheets in a manner similar to the StyleSheet API in React Native, allowing for a more streamlined and consistent styling approach across React projects.
@@ -18,7 +17,7 @@ Here's how you can use `stylesheet-from-rn` in your React project:
 Import the `StyleSheet` utility from the package:
 
 ```typescript
-import { StyleSheet } from 'stylesheet-from-rn';
+import { StyleSheet } from "stylesheet-from-rn";
 ```
 
 ### Step 2: Create Styles
@@ -28,15 +27,15 @@ Use the `StyleSheet.create` method to create your styles:
 ```typescript
 const styles = StyleSheet.create({
   container: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    backgroundColor: '#f0f0f0',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    backgroundColor: "#f0f0f0",
   },
   text: {
-    fontSize: '20px',
-    color: '#333',
+    fontSize: "20px",
+    color: "#333",
   },
 });
 ```
@@ -46,7 +45,7 @@ const styles = StyleSheet.create({
 Apply the styles to your React components using the `style` attribute:
 
 ```typescript
-import React from 'react';
+import React from "react";
 
 const App: React.FC = () => {
   return (
@@ -64,22 +63,8 @@ export default App;
 Here is a complete example in a single file for clarity:
 
 ```typescript
-import React from 'react';
-import { StyleSheet } from 'stylesheet-from-rn';
-
-const styles = StyleSheet.create({
-  container: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    backgroundColor: '#f0f0f0',
-  },
-  text: {
-    fontSize: '20px',
-    color: '#333',
-  },
-});
+import React from "react";
+import { StyleSheet } from "stylesheet-from-rn";
 
 const App: React.FC = () => {
   return (
@@ -88,6 +73,20 @@ const App: React.FC = () => {
     </div>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "100vh",
+    backgroundColor: "#f0f0f0",
+  },
+  text: {
+    fontSize: "20px",
+    color: "#333",
+  },
+});
 
 export default App;
 ```
